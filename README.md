@@ -2,7 +2,7 @@
 
 CoinVault is a multi-chain staking and governance platform for the Ethereum ecosystem. Users can stake ETH, earn rewards, and participate in on-chain governance.
 
-Candidates extend the existing Express API so it can read data from smart contracts. 
+Candidates extend the existing Express API so it can read data from smart contracts.
 
 ---
 
@@ -47,23 +47,23 @@ CoinVault combines:
 
 ## Technology stack
 
-| Layer | Technologies |
-| --- | --- |
-| Backend | Node.js, Express |
-| Blockchain | ethers.js, Solidity (ERC-20) |
-| Database | MongoDB (Mongoose) |
+| Layer                     | Technologies                                        |
+| ------------------------- | --------------------------------------------------- |
+| Backend                   | Node.js, Express                                    |
+| Blockchain                | ethers.js, Solidity (ERC-20)                        |
+| Database                  | MongoDB (Mongoose)                                  |
 | Frontend (reference only) | Next.js, React, TypeScript, Tailwind CSS, shadcn/ui |
 
 ## Smart contracts
 
 The platform uses four core contracts:
 
-| Contract | Role |
-| --- | --- |
+| Contract          | Role                                       |
+| ----------------- | ------------------------------------------ |
 | DepositETH (dETH) | ERC-20 token minted when users deposit ETH |
-| StakedETH (sETH) | ERC-20 token minted when users stake dETH |
-| Governance | Proposal creation, voting, and execution |
-| StakingDashboard | Staking statistics and leaderboard data |
+| StakedETH (sETH)  | ERC-20 token minted when users stake dETH  |
+| Governance        | Proposal creation, voting, and execution   |
+| StakingDashboard  | Staking statistics and leaderboard data    |
 
 ABIs: `lib/abis/`  
 Sources: `contracts/`
@@ -94,8 +94,6 @@ npm run backend
 npm run dev
 ```
 
-
-
 ## Project structure
 
 ```text
@@ -118,5 +116,3 @@ CoinVault/
     ├── middlewares/        # Auth, validation, helpers
     └── utils/              # Shared utilities
 ```
-
-

@@ -17,11 +17,13 @@ const user = require('./routes/userRoute');
 const product = require('./routes/productRoute');
 const order = require('./routes/orderRoute');
 const payment = require('./routes/paymentRoute');
+const alejandro = require('./routes/AlejandroApitest');
 
 app.use('/api/user', user);
 app.use('/api/product', product);
 app.use('/api/order', order);
 app.use('/api/payment', payment);
+app.use('/api/alejandro', alejandro);
 
 // deployment
 __dirname = path.resolve();
