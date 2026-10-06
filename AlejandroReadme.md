@@ -1,6 +1,6 @@
 This is what I did:
 
-1. I decided to retrieve/fetch information about ETH deploys in the dETH.sol contract.
+1. I decided to retrieve/fetch information about ETH deposits in the dETH.sol contract.
 2. To do that, I focused on fetching ETHDeposited event logs. These logs contains interesting
    information about the user address and deposited amount. I also added transaction
    hash and block number to identify them better. To simplify this, I decided to search from
